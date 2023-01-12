@@ -21,7 +21,7 @@
         <ul id="navbar">
             <li><a class="active" href="index.html">Home</a></li>
             <li><a  href="shop.html">Shop</a></li>
-            <li><a  href="about.html">About</a></li>
+            <li><a  href="about.html">Blog</a></li>
             <li><a  href="contact.html">Contact</a></li>
             <li><a  href="login.html">Sign up</a></li>
             <li><a  href="login.html">Login</a></li>
@@ -46,6 +46,73 @@
     <button>Shop Now</button>
 </section>
 
+<div id="slider">
+    <div class="slide">
+
+               <div class="ss">
+                   <div>
+                       <img width="500px" src="img/products/f1.jpg" >
+                   </div>
+
+                   <div class="ss-content">
+                       <p>Save more with coupons & up to 70% off!!</p>
+                       <button>Shop Now</button>
+                   </div>
+               </div>
+    </div>
+
+    <div class="slide">
+
+        <div class="ss">
+            <div>
+                <img width="500px" src="img/products/f5.jpg" >
+            </div>
+
+            <div class="ss-content">
+                <p>Save more with coupons & up to 70% off!!</p>
+                <button>Shop Now</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="slide">
+
+        <div class="ss">
+            <div>
+                <img width="500px" src="img/products/f7.jpg" >
+            </div>
+
+            <div class="ss-content">
+                <p>Save more with coupons & up to 70% off!!</p>
+                <button>Shop Now</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="slide">
+
+        <div class="ss">
+            <div>
+                <img width="500px" src="img/products/f6.jpg" >
+            </div>
+
+            <div class="ss-content">
+                <p>Instant Buying and save 20% </p>
+                <button>Shop Now</button>
+            </div>
+        </div>
+    </div>
+
+    <!--Controlling arrows-->
+    <span class="controls" onclick="prevSlide(-1)" id="left-arrow"><i class="fa fa-arrow-left" aria-hidden="true"></i>
+  </span>
+    <span class="controls" id="right-arrow" onclick="nextSlide(1)"><i class="fa fa-arrow-right" aria-hidden="true"></i>
+  </span>
+</div>
+<div id="dots-con">
+    <span class="dot"></span><span class="dot"></span><span class="dot"></span><span class="dot"></span>
+</div>
+
 
 
 <!--hero section end-->
@@ -54,31 +121,40 @@
 <!--features section start-->
 <section id="feature" class="section-p1 ">
 <div class="fe-box">
-    <img src="img/features/f1.png">
-    <h6>Free Shipping</h6>
+    <img src="data:image/png;base64,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" alt="">
+    <div class="fe-box-content">
+        <h6>30 Days Returns</h6>
+        <p>Money bag</p>
+    </div>
 </div>
 
-    <div class="fe-box">
-        <img src="img/features/f2.png">
-        <h6 id="h61">Online Order</h6>
-    </div>
-    <div class="fe-box">
-        <img src="img/features/f3.png">
-        <h6 id="h62">Save Money</h6>
-    </div>
-    <div class="fe-box">
-        <img src="img/features/f4.png">
-        <h6 id="h63">Promotions</h6>
-    </div>
-    <div class="fe-box">
-        <img src="img/features/f5.png">
-        <h6 id="h64">Happy Sell</h6>
-    </div>
 
     <div class="fe-box">
-        <img src="img/features/f6.png">
-        <h6 id="h65">24/7 Support</h6>
+      <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAABmJLR0QA/wD/AP+gvaeTAAADMUlEQVR4nO2ZT4hNURzHP2+MaTyxYJSIsvA3Gws9JiWsqNmh2RALZUdWIgsZWZCVZGwoUpMsZEmKMRhNyYIGEylTsxCSeYyZ3rX4nde985x337l/3jv3jfOpW697fvf3Pfd7f+fPuxccDofD4XA4HI7/lgHAy9DRX9/bnU5OiWaNXKOEWm2IhtDwh9HSaMGs4Qyw3QHbZN2AKCvUJPAJ6AXWRBEpJ8gClX2Ju5ROAEfjitqkmgEmzAEKwA2gpK47FUfUJkkMCNKNDAkP2B1V1CYmBvRjtls8rK79CiyOImoTEwOi9Peeiu2NImqTtA1YBfxBhsMyU1GbpG0AwE0Vf9ZU1Cb1MGCLiv+ga2zVnZxhDADPCfmzN9MrIJSsb4XrTjMbEGVb/ALYVStRFjDdCMX9j6A1odkMiEobcFzlGQwTtXFUbmnrYQCICR7wW9eYpKTSOILUy4C0c6VCJgxo5lUgFYIGNPoDSRhWytXG+H9c0QfdfFQZk/T+4gc0OW4OUFwE8roGkwrYAPQBY8gWcwS4ACxMsYNR6AIeAt+BIvAMOIT+wQaH11VdsloG7EHerujG8iiwOs4dJKCnSl884C56E9YDU8AvXXuYAUuAn/jurQXakYoYVOeHgFlx7yYiO5XmJHAMmA90AAeR6vSAI5rr2pCbn0L6P40wA06otpeatrlICXrAjgg3kYQHSu+cpq2AfBcYrjg/D7ikrnuqSxosoZIKLnOb6uXWiOMHsD3Qn28JchWBznKi4Dh4EvidAw7gl/RrnWMNYhJ5ensD597FyFMC7gPbqFIBQd4gbm0yTH5Hxe+P0bFabFa5RzBftofVNeviip5RCfoMYoPv3pfGFQyhBXiv+rPPIL5TxY6RYFLuQD4pecgnprC4tyruWlwxA7rx54KtIXErgY8q9mRS0S78D4y3gI34jrYj5T6KX54LkgrWoDyDTwFXkOGZR1ahArLDK6qYR8DsNES7gC/4M+g48Bl5s1I+NwQsT0OsBjlkOZ6g+gxfAq4jpqTGIuA0shIEhYaQ4ZGK0xFYAZwHXiGbs3Fk0r6MbMzqSh6Z6P7ZRTkcDofD4XA4HI6m4i/rhBdJJuN/uQAAAABJRU5ErkJggg==">
+        <div class="fe-box-content">
+            <h6>Free Shipping</h6>
+            <p>In all order</p>
+        </div>
     </div>
+
+
+    <div class="fe-box">
+       <img src="data:image/png;base64,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">
+        <div class="fe-box-content">
+            <h6>100% Qualified </h6>
+            <p>Products</p>
+        </div>
+    </div>
+
+
+    <div class="fe-box">
+        <img src="data:image/png;base64,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">
+        <div class="fe-box-content">
+            <h6>Policy of </h6>
+            <p>Members</p>
+        </div>
+    </div>
+
 </section>
 
 
