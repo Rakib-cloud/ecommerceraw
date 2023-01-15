@@ -42,12 +42,23 @@
                     <a href="#" class="social"><i class="fab fa-linkedin-in"></i></a>
                 </div>
                 <span>or use your email for registration</span>
-                <input type="text"  id="name" placeholder="Name"  onclick="validname();"/>
-                <input type="email" id="email" placeholder="Email"  onclick="validemail();" />
-                <input type="text" id="phone"  placeholder="Phone Number"  onclick="validphone();">
-                <input type="text"  id="nid" placeholder="enter your NID"  onclick="validnid();">
-                <input type="text"  id="pass" placeholder="enter your password"  onclick="validpass();">
-                <button>Sign Up</button>
+<!--                onclick="validname();"-->
+                <input type="text"  id="name" placeholder="Name"  />
+                <span class="valid" id="validname">Your Name is valid</span>
+                <span class="invalid" id="invalidname">name length should be 5 to 50,only alphabet and . -</span>
+                <input type="email" id="email" placeholder="Email"   />
+                <span class="valid" id="validemail">Your email is valid</span>
+                <span class="invalid" id="invalidemail">valid email structure with dot com domain</span>
+                <input type="text" id="phone"  placeholder="Phone Number"  >
+                <span  class="valid" id="validphone">Your phone is valid</span>
+                <span class="invalid" id="invalidphone">please enter bangladeshi phone number with or without country code</span>
+                <input type="text"  id="nid" placeholder="enter your NID"  >
+                <span class="valid" id="validnid">Your nid is valid</span>
+                <span  class="invalid" id="invalidnid">provide this types of nid 1XXX-5XX-6X )X means number</span>
+                <input type="text"  id="pass" placeholder="enter your password"  >
+                <span class="valid" id="validpass">Your password is valid</span>
+                <span  class="invalid" id="invalidpass">Minimum eight characters, at least one uppercase letter, one lowercase letter, one number and one special character:</span>
+                <button onsubmit="myFunction()" type="submit">Sign Up</button>
             </form>
         </div>
         <div class="form-container sign-in-container">

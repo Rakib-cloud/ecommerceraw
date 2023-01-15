@@ -225,3 +225,13 @@ input {
 @media (max-width: 477px){
 
 }
+
+.valid{
+    font-size: 8px;
+    color:green;
+
+}
+.invalid{
+    font-size: 8px;
+    color:red;
+}
